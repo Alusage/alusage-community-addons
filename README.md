@@ -12,8 +12,8 @@ Regroupe les modules écrits par Nicolas JEUDY / Alusage auparavant éparpillés
 | Branche | Modules |
 |---|---|
 | `18.0` | 1 |
-| `16.0` | 7 |
-| `14.0` | 16 |
+| `16.0` | 8 |
+| `14.0` | 17 |
 | `13.0` | 5 |
 | `12.0` | 10 |
 | `9.0`  | 3 |
