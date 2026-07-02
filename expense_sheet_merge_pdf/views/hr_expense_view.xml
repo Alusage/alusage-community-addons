@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_expense_sheet_form_inherit_merge_pdf" model="ir.ui.view">
+        <field name="name">merge.pdf.expense.form</field>
+        <field name="model">hr.expense.sheet</field>
+        <field name="inherit_id" ref="hr_expense.view_hr_expense_sheet_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_mode']" position="after">
+                <field name="expense_merge_pdf_attachment_ids" domain="[('mimetype', '=', 'application/pdf'),('type', '=', 'binary'),('res_model', '=', 'hr.expense'),('res_id', 'in', expense_line_ids)]" widget="many2many_tags" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
