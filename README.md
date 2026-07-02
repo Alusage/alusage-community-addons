@@ -15,7 +15,7 @@ Regroupe les modules écrits par Nicolas JEUDY / Alusage auparavant éparpillés
 | `16.0` | 7 |
 | `14.0` | 16 |
 | `13.0` | 5 |
-| `12.0` | 9 |
+| `12.0` | 10 |
 | `9.0`  | 3 |
 
 ```bash
