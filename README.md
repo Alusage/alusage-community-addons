@@ -13,3 +13,4 @@ Modules Alusage libres (AGPL/LGPL/GPL). Chaque module déclare sa propre licence
 | `res_users_right_management` | LGPL-3 |
 | `web_select_top_menu` | AGPL-3 |
 | `website_sale_mandate` | LGPL-3 |
+| `product_template_openfood` | — |
