@@ -11,3 +11,4 @@ Modules Alusage libres (AGPL/LGPL/GPL). Chaque module déclare sa propre licence
 | `mail_message_rocketchat` | LGPL-3 |
 | `project_rocketchat` | LGPL-3 |
 | `web_select_top_menu` | AGPL-3 |
+| `hr_employee_stats_sheet` | LGPL-3 |
