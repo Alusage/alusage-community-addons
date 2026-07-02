@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="index" name="My PWA App">
+        <t t-call="web.layout">
+            <t t-set="head">
+                <meta charset="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <title>Portail PWA - Profil RPG</title>
+
+                <!-- Google Fonts -->
+                <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&amp;family=Spectral:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+
+                <!-- React App Assets (will be built by Vite) -->
+                <link rel="stylesheet" href="/my_pwa_app/static/dist/index.css"/>
+
+                <!-- Session info for React -->
+                <script type="text/javascript">
+                    window.odooSessionInfo = <t t-raw="session_info"/>;
+                </script>
+            </t>
+
+            <div id="root" style="min-height: 100vh;">
+                <!-- React app will mount here -->
+                <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(to bottom, #0f172a, #1e293b);">
+                    <div style="text-align: center; color: #fef3c7;">
+                        <h1 style="font-family: 'Cinzel', serif; font-size: 2rem; margin-bottom: 1rem;">⚡ Chargement...</h1>
+                        <p>Initialisation de votre profil RPG</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- React App Script -->
+            <script type="module" src="/my_pwa_app/static/dist/index.js"></script>
+        </t>
+    </template>
+</odoo>
