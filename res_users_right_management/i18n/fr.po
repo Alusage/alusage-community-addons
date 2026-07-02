@@ -1,0 +1,73 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* res_users_right_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-12 14:35+0000\n"
+"PO-Revision-Date: 2022-12-12 14:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: res_users_right_management
+#: model:ir.model.fields,field_description:res_users_right_management.field_res_users__accesses_count
+msgid "# Access Rights"
+msgstr "# Droits d'accès"
+
+#. module: res_users_right_management
+#: model:ir.model.fields,field_description:res_users_right_management.field_res_users__groups_count
+msgid "# Groups"
+msgstr "# Groupes"
+
+#. module: res_users_right_management
+#: model:ir.model.fields,field_description:res_users_right_management.field_res_users__rules_count
+msgid "# Record Rules"
+msgstr "# Règles sur les enregistrements"
+
+#. module: res_users_right_management
+#: code:addons/res_users_right_management/models/res_users.py:44
+#: model_terms:ir.ui.view,arch_db:res_users_right_management.res_users_access_right_button
+#, python-format
+msgid "Access Rights"
+msgstr "Droits d'accès"
+
+#. module: res_users_right_management
+#: code:addons/res_users_right_management/models/res_users.py:29
+#: model_terms:ir.ui.view,arch_db:res_users_right_management.res_users_access_right_button
+#, python-format
+msgid "Groups"
+msgstr "Groupes"
+
+#. module: res_users_right_management
+#: model:ir.model.fields,help:res_users_right_management.field_res_users__accesses_count
+msgid "Number of access rights that apply to the current user"
+msgstr "Nombre de droits d'accès qui s'appliquent à l'utilisateur actuel"
+
+#. module: res_users_right_management
+#: model:ir.model.fields,help:res_users_right_management.field_res_users__groups_count
+msgid "Number of groups that apply to the current user"
+msgstr "Nombre de groupes qui s'appliquent à l'utilisateur actuel"
+
+#. module: res_users_right_management
+#: model:ir.model.fields,help:res_users_right_management.field_res_users__rules_count
+msgid "Number of record rules that apply to the current user"
+msgstr "Nombre de règles sur les enregistrements qui s'appliquent à l'utilisateur actuel"
+
+#. module: res_users_right_management
+#: code:addons/res_users_right_management/models/res_users.py:59
+#: model_terms:ir.ui.view,arch_db:res_users_right_management.res_users_access_right_button
+#, python-format
+msgid "Record Rules"
+msgstr "Règles sur les enregistrements"
+
+#. module: res_users_right_management
+#: model:ir.model,name:res_users_right_management.model_res_users
+msgid "Users"
+msgstr "Utilisateurs"
+

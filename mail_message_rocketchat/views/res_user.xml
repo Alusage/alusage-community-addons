@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_users_form_simple_rocketchat_modif" model="ir.ui.view">
+            <field name="name">res.users.rocketchat.preferences.form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='preferences']" position="after">
+                    <group>
+                        <field name="rc_server" />
+                        <field name="rc_login" />
+                        <field name="rc_password" password="True"/>
+                    </group>
+                </xpath>
+                
+            </field>
+        </record>
+    </data>
+</odoo>

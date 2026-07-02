@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="rocketchat_link_partner_wizard_form" model="ir.ui.view">
+        <field name="name">rocketchat.link.partner.wizard.form</field>
+        <field name="model">rocketchat.link.partner.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+            <group name="name" string="Select a RocketChat user">    
+                <field name="server_id"/>
+                <field name="rocket_user_id" attrs="{'invisible': [('server_id', '=', False)]}" domain="[('partner_id', '=', False),('server_id', '=', server_id)]"/>
+                <field name="partner_id" invisible="1"/>
+            </group>
+                <footer>
+                    <button name="action_link" string="Link" type="object" default_focus="1" class="oe_highlight"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

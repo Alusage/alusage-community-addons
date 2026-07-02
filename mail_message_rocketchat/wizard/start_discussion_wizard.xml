@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_partner_rc_discussion" model="ir.actions.act_window">
+        <field name="name">Create a Rocketchat Discussion</field>
+        <field name="res_model">partner.rc.discussion.wizard</field>
+        <field name="target">new</field>
+        <field name="view_mode">form</field>
+        <field name="binding_model_id" ref="base.model_res_partner" />
+        <field name="binding_view_types">list</field>
+    </record>
+
+    <record model="ir.ui.view" id="partner_rc_discussion_wizard_form">
+        <field name="name">partner.rc.discussion.form</field>
+        <field name="model">partner.rc.discussion.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create a Rocketchat discussion">
+                <group>
+                    <field name="discussion_name" />
+                </group>
+                <footer>
+                    <button string="Create and Open" name="create_open_rc_discussion" type="object" class="oe_highlight" />
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

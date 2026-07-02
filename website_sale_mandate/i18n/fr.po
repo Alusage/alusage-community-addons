@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* website_sale_mandate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-29 21:23+0000\n"
+"PO-Revision-Date: 2023-08-29 21:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "<span class=\"fa fa-chevron-left\"/> Previous"
+msgstr "Précédent"
+
+#. module: website_sale_mandate
+#: model:ir.model.fields,field_description:website_sale_mandate.field_sale_order__authorize_iban_direct_debit
+msgid "Active Direct Debit (SEPA)"
+msgstr "Activer le Prélèvement (SEPA)"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.inherit_view_order_form_inherit_sale_mandate
+msgid "Create SEPA Mandate"
+msgstr "Créer le mandat SEPA"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "For your <u>next payments</u>, prefer direct debit"
+msgstr "Pour vos <u>prochains paiements</u>, préférez le prélevement automatique"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "I dont't want to use direct debit <u>for next payments</u>"
+msgstr "Je ne souhaite pas utiliser le prélevement automatique <u>pour les prochains paiements</u>"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "I want to use direct debit <u>for next payments</u>"
+msgstr "Je souhaite utiliser le prélevement automatique <u>pour les prochains paiements</u>"
+
+#. module: website_sale_mandate
+#: model:ir.model.fields,field_description:website_sale_mandate.field_sale_order__iban
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "IBAN"
+msgstr ""
+
+#. module: website_sale_mandate
+#: model:ir.model.fields,field_description:website_sale_mandate.field_sale_order__iban_contact
+msgid "Iban Contact"
+msgstr "Contact de l'IBAN"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "Iban Contact name and first name"
+msgstr "Contact de l'IBAN (Prénom et Nom)"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "If you wish, you can send us your IBAN, so that we can make the next direct debits by SEPA mandate"
+msgstr "Si vous le souhaitez, vous pouvez nous communiquer votre IBAN, afin que nous fassions les prochains prélevements par mandat SEPA"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "Next <span class=\"fa fa-chevron-right\"/>"
+msgstr "Suivant"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.view_sales_order_filter_mandate
+msgid "Pending SEPA mandate"
+msgstr "Mandat SEPA en attente"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.inherit_view_order_form_inherit_sale_mandate
+msgid "SEPA"
+msgstr ""
+
+#. module: website_sale_mandate
+#: model:ir.model,name:website_sale_mandate.model_sale_order
+msgid "Sale Order"
+msgstr "Bon de commande"
+
+#. module: website_sale_mandate
+#: model:ir.model.fields,field_description:website_sale_mandate.field_sale_order__show_mandate_action
+msgid "Show Mandate action"
+msgstr "Voir l'action Mandat SEPA"
+
+#. module: website_sale_mandate
+#: model_terms:ir.ui.view,arch_db:website_sale_mandate.website_sale_sepa_extra_info
+msgid "You can provide your RIB document"
+msgstr "Vous pouvez ajouter votre RIB en pdf"
+

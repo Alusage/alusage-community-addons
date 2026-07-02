@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="inherit_view_order_form_inherit_sale_mandate" model="ir.ui.view">
+        <field name="name">website_sale_mandate.view_order_form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" positon="inside">
+                <page name="SEPA" string="SEPA" attrs="{'invisible': [('authorize_iban_direct_debit','=', False)]}">
+                    <group>
+                        <field name="authorize_iban_direct_debit" invisible="1"/>
+                        <field name="show_mandate_action" invisible="1"/>
+                        <field name="iban"/>
+                        <field name="iban_contact"/>
+                    </group>
+                </page>
+            </xpath>
+            <button name="preview_sale_order" position="before">
+                <button name="action_create_partner_mandate" type="object" string="Create SEPA Mandate" class="btn-primary" attrs="{'invisible': [('show_mandate_action', '=', False)]}"/>
+            </button>
+        </field>
+    </record>
+
+    <record id="view_sales_order_filter_mandate" model="ir.ui.view">
+        <field name="name">sale.order.list.select.inherit.mandate</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='activities_upcoming_all']" position="after">
+                <separator />
+                <field name="show_mandate_action" invisible="1" />
+                <filter string="Pending SEPA mandate" name="sepa_mandate"
+                    domain="[('show_mandate_action', '=', True)]" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
