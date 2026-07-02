@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="module_category_administration_rocketchat">
+            <field name="name">RocketChat</field>
+            <field name="parent_id" ref="base.module_category_administration"/>
+        </record>
+
+        <record model="res.groups" id="group_rocketchat_user">
+            <field name="name">User</field>
+            <field name="category_id" ref="module_category_administration_rocketchat"/>
+        </record>
+
+        <record model="res.groups" id="group_rocketchat_manager">
+            <field name="name">Manager</field>
+            <field name="implied_ids" eval="[(4, ref('group_rocketchat_user'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+            <field name="category_id" ref="module_category_administration_rocketchat"/>
+        </record>
+    </data>
+
+</odoo>
