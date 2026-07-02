@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="partner_rocketchat_form_view" model="ir.ui.view">
+            <field name="name">Partner Rocketchat Form View</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="groups_id" eval="[(4, ref('mail_message_rocketchat.group_rocketchat_user'))]"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button string="Rocketchat message" name="send_rc_direct_message" type="object" class="oe_stat_button" icon="fa-rocket"/>
+                </xpath>
+                <xpath expr="//notebook" position="inside">
+                    <page name="rocketchat" string="Rocketchat">
+                        <button string="Link to Rocketchat User" name="link_partner" type="object" class="oe_stat_button" icon="fa-rocket"/>        
+                        <separator string="Current linked users"/>
+                        <group>
+                            <field name="rocketchat_users" readonly="True" nolabel="1"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

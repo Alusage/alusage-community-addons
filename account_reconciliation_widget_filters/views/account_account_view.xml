@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="view_account_list_inherit_reconciliation_widget" model="ir.ui.view">
+    <field name="name">account.account.view.list.inherit</field>
+    <field name="model">account.account</field>
+    <field name="inherit_id" ref="account.view_account_list"/>
+    <field name="arch" type="xml">
+        <field name="reconcile" position="after">
+            <field name="exclude_from_bank_reconcile" widget="boolean_toggle"/>
+        </field>
+    </field>
+</record>
+</odoo>

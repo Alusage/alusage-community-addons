@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+  <data>
+    <record id="action_rocketchat_servers_tree_view" model="ir.actions.act_window">
+      <field name="name">Rocketchat</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">rocketchat.server</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p><br/></p>
+      </field>
+    </record>
+
+    <menuitem name="Rocketchat" 
+              id="menu_rocketchat"
+              parent="mail.menu_root_discuss" 
+              sequence="0"
+              action="action_rocketchat_servers_tree_view"/>
+  </data>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="rocketchat_inherit_mail_channel" model="ir.ui.view">
+    <field name="name">mail.channel.view.form.rocketchat.inherit</field>
+    <field name="model">mail.channel</field>
+    <field name="inherit_id" ref="mail.mail_channel_view_form"/>
+    <field name="arch" type="xml">
+        <page name="mail_channel_integrations" position="after">
+            <page name="rocketchat" string="RocketChat">
+                <group class="o_label_nowrap">
+                    <field name="rocketchat_chan"/>
+                    <button name="action_test_channel" type="object" string="Test Channel" />
+                </group>
+            </page>
+        </page>
+    </field>
+</record>
+</odoo>

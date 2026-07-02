@@ -1,0 +1,354 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mail_message_rocketchat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-07 12:00+0000\n"
+"PO-Revision-Date: 2022-06-07 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_mail_channel__rocketchat_chan
+msgid "Canal Principal"
+msgstr "Canal principal"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.partner_rc_discussion_wizard_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__channel_id
+msgid "Channel ID"
+msgstr "ID Canal"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__channel_ids
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_server_view_form
+msgid "Channels"
+msgstr "Canaux"
+
+#. module: mail_message_rocketchat
+#: model:ir.model,name:mail_message_rocketchat.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__create_rc_user_for_new_odoo_user
+msgid "Create RC user for new Odoo user"
+msgstr "Créer un utilisateur Rocketchat pour chaque nouvel utilisateur Odoo"
+
+#. module: mail_message_rocketchat
+#: model:ir.actions.act_window,name:mail_message_rocketchat.action_partner_rc_discussion
+msgid "Create a Rocketchat Discussion"
+msgstr "Créer une discussion Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model:ir.model,name:mail_message_rocketchat.model_partner_rc_discussion_wizard
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.partner_rc_discussion_wizard_form
+msgid "Create a Rocketchat discussion"
+msgstr "Créer une discussion Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.partner_rc_discussion_wizard_form
+msgid "Create and Open"
+msgstr "Créer et ouvrir"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__create_uid
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__create_uid
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__create_uid
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__create_uid
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__create_uid
+msgid "Created by"
+msgstr "Créer par"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__create_date
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__create_date
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__create_date
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__create_date
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.partner_rocketchat_form_view
+msgid "Current linked users"
+msgstr "Utilisateurs liés"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__default
+msgid "Default ?"
+msgstr "Défaut ?"
+
+#. module: mail_message_rocketchat
+#: model:ir.model,name:mail_message_rocketchat.model_mail_channel
+msgid "Discussion Channel"
+msgstr "Canal de discussion"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__discussion_name
+msgid "Discussion name"
+msgstr "Nom de la discussion"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__display_name
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__display_name
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__display_name
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__display_name
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__id
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__id
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__id
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__id
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard____last_update
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel____last_update
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard____last_update
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server____last_update
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__write_uid
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__write_uid
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__write_uid
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__write_uid
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__write_date
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__write_date
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__write_date
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__write_date
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_link_partner_wizard_form
+msgid "Link"
+msgstr "Lien"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.partner_rocketchat_form_view
+msgid "Link to Rocketchat User"
+msgstr "Lier à un utilisateur Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model:ir.model,name:mail_message_rocketchat.model_rocketchat_link_partner_wizard
+msgid "Link to partner"
+msgstr "Lier au contact"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__partner_id
+msgid "Linked Contact"
+msgstr "Contact lié"
+
+#. module: mail_message_rocketchat
+#: code:addons/mail_message_rocketchat/models/res_user.py:0
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_res_users__rc_login
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__login
+#, python-format
+msgid "Login"
+msgstr "Login"
+
+#. module: mail_message_rocketchat
+#: model:res.groups,name:mail_message_rocketchat.group_rocketchat_manager
+msgid "Manager"
+msgstr "Manager"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__name
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__users_count
+msgid "Nb Users"
+msgstr "Nb utilisateur"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.partner_rc_discussion_wizard_form
+msgid "No accented or special character please."
+msgstr "Pas d'accents ou de caractères spéciaux SVP"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__name
+msgid "Nom"
+msgstr "Nom"
+
+#. module: mail_message_rocketchat
+#: code:addons/mail_message_rocketchat/wizard/start_discussion_wizard.py:0
+#, python-format
+msgid "None of selected partners with Rocketchat User"
+msgstr "Aucun des contacts sélectionné n'a d'utilisateur Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_server_view_form
+msgid "Options"
+msgstr "Options"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__partner_ids
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__partner_id
+msgid "Partner"
+msgstr "Contact"
+
+#. module: mail_message_rocketchat
+#: code:addons/mail_message_rocketchat/models/res_user.py:0
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_res_users__rc_password
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__password
+#, python-format
+msgid "Password"
+msgstr "Mot de passe"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_server_view_form
+msgid "Populate"
+msgstr "Importer les données"
+
+#. module: mail_message_rocketchat
+#: model:ir.model,name:mail_message_rocketchat.model_rocketchat_server
+msgid "RochetChat Server"
+msgstr "Serveur Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model:ir.module.category,name:mail_message_rocketchat.module_category_administration_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_inherit_mail_channel
+msgid "RocketChat"
+msgstr "Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_server_view_form
+msgid "RocketChat Server"
+msgstr "Serveur Rocketchat"
+
+#. module: mail_message_rocketchat
+#: code:addons/mail_message_rocketchat/models/res_user.py:0
+#, python-format
+msgid "RocketChat login for user %s is not set."
+msgstr "Le login Rocketchat pour l'utilisateur %s n'est pas défini"
+
+#. module: mail_message_rocketchat
+#: code:addons/mail_message_rocketchat/models/res_user.py:0
+#, python-format
+msgid "RocketChat password for user %s is not set."
+msgstr "Le mot de passe Rocketchat pour l'utilsiateur %s n'est pas défini"
+
+#. module: mail_message_rocketchat
+#: model:ir.model,name:mail_message_rocketchat.model_rocketchat_channel
+msgid "RocketChatChannel"
+msgstr "CanalRocketchat"
+
+#. module: mail_message_rocketchat
+#: model:ir.model,name:mail_message_rocketchat.model_rocketchat_user
+msgid "RocketChatUser"
+msgstr "UtilisateurRocketchat"
+
+#. module: mail_message_rocketchat
+#: model:ir.actions.act_window,name:mail_message_rocketchat.action_rocketchat_servers_tree_view
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.partner_rocketchat_form_view
+msgid "Rocketchat"
+msgstr "Rocketchat"
+
+#. module: mail_message_rocketchat
+#: code:addons/mail_message_rocketchat/models/res_partner.py:0
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_res_partner__rocketchat_users
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_res_users__rocketchat_users
+#, python-format
+msgid "Rocketchat Users"
+msgstr "Utilisateurs Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.partner_rocketchat_form_view
+msgid "Rocketchat message"
+msgstr "Envoyer un message Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_link_partner_wizard_form
+msgid "Select a RocketChat user"
+msgstr "Sélectionner un utilisateur Rocketchat"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_partner_rc_discussion_wizard__server_id
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_channel__server_id
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__server_id
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__server_id
+msgid "Server"
+msgstr "Serveur"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_inherit_mail_channel
+msgid "Test Channel"
+msgstr "Test canal"
+
+#. module: mail_message_rocketchat
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_server_view_form
+msgid "Test Channels"
+msgstr "Test canaux"
+
+#. module: mail_message_rocketchat
+#: code:addons/mail_message_rocketchat/models/res_partner.py:0
+#, python-format
+msgid ""
+"This contact has no Rocketchat user attached.\n"
+"Please contact him by an other way or contact your administrator."
+msgstr "Ce contact n'a pas d'utilisateur Rocketchat lié.\n"
+"Veuillez le contacter par un autre moyen, ou contactez votre administrateur."
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__server_url
+msgid "URL"
+msgstr "URL"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_link_partner_wizard__rocket_user_id
+#: model:res.groups,name:mail_message_rocketchat.group_rocketchat_user
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__user_id
+msgid "User ID"
+msgstr "ID Utilisateur"
+
+#. module: mail_message_rocketchat
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_user__username
+msgid "Username"
+msgstr "Pseudo"
+
+#. module: mail_message_rocketchat
+#: model:ir.model,name:mail_message_rocketchat.model_res_users
+#: model:ir.model.fields,field_description:mail_message_rocketchat.field_rocketchat_server__user_ids
+#: model_terms:ir.ui.view,arch_db:mail_message_rocketchat.rocketchat_server_view_form
+msgid "Users"
+msgstr "Utilisateurs"
+
+#. module: mail_message_rocketchat
+#: model:ir.actions.server,name:mail_message_rocketchat.ir_cron_generate_missing_rc_accounts_ir_actions_server
+#: model:ir.cron,cron_name:mail_message_rocketchat.ir_cron_generate_missing_rc_accounts
+#: model:ir.cron,name:mail_message_rocketchat.ir_cron_generate_missing_rc_accounts
+msgid "Users: generate missing Rocketchat accounts"
+msgstr "Utilisateurs : générer les comptes Rocketchat manquants"

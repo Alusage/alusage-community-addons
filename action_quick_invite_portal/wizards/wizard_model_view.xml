@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="wizard_view_inherit_portal" model="ir.ui.view">
+        <field name="name">portal.wizard.view.form.inherit</field>
+        <field name="model">portal.wizard</field>
+        <field name="inherit_id" ref="portal.wizard_view"/>
+        <field name="arch" type="xml">
+            <button name="action_apply" position="after">
+               <button string="Apply and Force" name="action_apply_and_force" type="object" class="btn-secondary"/> 
+            </button>
+        </field>
+    </record>
+
+</odoo>
