@@ -12,11 +12,12 @@ git clone -b 18.0 git@github.com:Alusage/alusage-community-addons.git
 
 ## Index des modules par version
 
-### Odoo 18.0  · 1 module
+### Odoo 18.0  · 2 modules
 
 | Module | Description | Licence |
 |---|---|---|
 | `my_pwa_app` | Progressive Web App pour utilisateurs portail avec gamification MTG | LGPL-3 |
+| `web_select_top_menu` | Select top menus per user to create simple backend entry, with administration of top menus (synchronized or duplicated sub-menus) | AGPL-3 |
 
 ### Odoo 16.0  · 8 modules
 
