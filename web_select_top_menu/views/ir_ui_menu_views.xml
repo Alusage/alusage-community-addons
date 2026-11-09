@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="top_menu_list_view" model="ir.ui.view">
+        <field name="name">top.menu.list</field>
+        <field name="model">ir.ui.menu</field>
+        <field name="arch" type="xml">
+            <tree string="Top Menus">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="top_menu_user_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="top_menu_form_view" model="ir.ui.view">
+        <field name="name">top.menu.form</field>
+        <field name="model">ir.ui.menu</field>
+        <field name="arch" type="xml">
+            <form string="Top Menu">
+                <header>
+                    <button name="action_open_top_menu_add_wizard" type="object"
+                            string="Add an Existing Menu" class="btn-primary"/>
+                    <button name="action_sync_from_source" type="object"
+                            string="Synchronize with Sources"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="e.g. Customer Portal"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="is_top_menu" invisible="1"/>
+                            <field name="parent_id" readonly="1"
+                                   attrs="{'invisible': [('is_top_menu', '=', True)]}"/>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="action"/>
+                            <field name="top_menu_source_id" readonly="1"
+                                   attrs="{'invisible': [('top_menu_source_id', '=', False)]}"/>
+                            <field name="top_menu_sync" readonly="1"
+                                   attrs="{'invisible': [('top_menu_source_id', '=', False)]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Sub-menus" name="sub_menus">
+                            <field name="child_id" context="{'active_test': False, 'ir.ui.menu.full_list': True}">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="action"/>
+                                    <field name="top_menu_sync" readonly="1"/>
+                                    <field name="top_menu_source_id"/>
+                                    <button name="action_open_menu" type="object"
+                                            icon="fa-pencil" string="Open"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Access Rights" name="access_rights"
+                              attrs="{'invisible': [('is_top_menu', '=', True)]}">
+                            <field name="groups_id"/>
+                        </page>
+                        <page string="Users" name="users"
+                              attrs="{'invisible': [('is_top_menu', '=', False)]}">
+                            <field name="top_menu_user_ids" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_top_menus" model="ir.actions.act_window">
+        <field name="name">Top Menus</field>
+        <field name="res_model">ir.ui.menu</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_top_menu', '=', True)]</field>
+        <field name="context">{'default_is_top_menu': True, 'ir.ui.menu.full_list': True}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('top_menu_list_view')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('top_menu_form_view')})]"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a top menu to lock users in a simplified workspace.
+            </p>
+            <p>
+                Add sub-menus directly, or duplicate existing menus. A duplicated menu can stay
+                synchronized with its source, or become an independent copy.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_top_menus" name="Top Menus" parent="base.menu_users"
+              action="action_top_menus" sequence="20" groups="base.group_system"/>
+</odoo>
