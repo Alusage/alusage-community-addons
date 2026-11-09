@@ -1,0 +1,225 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_select_top_menu
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 04:44+0000\n"
+"PO-Revision-Date: 2026-11-09 04:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: web_select_top_menu
+#. odoo-python
+#: code:addons/web_select_top_menu/wizard/top_menu_add_wizard.py:0
+#, python-format
+msgid "A menu cannot be added inside itself or one of its sub-menus."
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_form_view
+msgid "Access Rights"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_add_wizard_form_view
+msgid "Add"
+msgstr ""
+
+#. module: web_select_top_menu
+#. odoo-python
+#: code:addons/web_select_top_menu/models/ir_ui_menu.py:0
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_add_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_form_view
+#, python-format
+msgid "Add an Existing Menu"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model,name:web_select_top_menu.model_top_menu_add_wizard
+msgid "Add an Existing Menu to a Top Menu"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.actions.act_window,help:web_select_top_menu.action_top_menus
+msgid ""
+"Add sub-menus directly, or duplicate existing menus. A duplicated menu can stay\n"
+"                synchronized with its source, or become an independent copy."
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_add_wizard_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.actions.act_window,help:web_select_top_menu.action_top_menus
+msgid "Create a top menu to lock users in a simplified workspace."
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields.selection,name:web_select_top_menu.selection__top_menu_add_wizard__mode__copy
+msgid "Duplicated (independent copy)"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__include_children
+msgid "Include Sub-menus"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model,name:web_select_top_menu.model_ir_ui_menu
+msgid "Menu"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__mode
+msgid "Mode"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_form_view
+msgid "Open"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__parent_id
+msgid "Parent Menu"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,help:web_select_top_menu.field_ir_ui_menu__is_top_menu
+msgid ""
+"Root of a simplified environment. Its sub-menus are the applications shown "
+"to the users who have this menu as their top menu."
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_ir_ui_menu__top_menu_source_id
+#: model:ir.model.fields,field_description:web_select_top_menu.field_top_menu_add_wizard__source_id
+msgid "Source Menu"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_form_view
+msgid "Sub-menus"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_form_view
+msgid "Synchronize with Sources"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_ir_ui_menu__top_menu_sync
+msgid "Synchronized"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,help:web_select_top_menu.field_ir_ui_menu__top_menu_sync
+msgid ""
+"Synchronized copies follow the name, sequence, action and access groups of "
+"their source menu."
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields.selection,name:web_select_top_menu.selection__top_menu_add_wizard__mode__sync
+msgid "Synchronized with the source menu"
+msgstr ""
+
+#. module: web_select_top_menu
+#. odoo-python
+#: code:addons/web_select_top_menu/wizard/top_menu_add_wizard.py:0
+#, python-format
+msgid "The parent menu must belong to a top menu container."
+msgstr ""
+
+#. module: web_select_top_menu
+#. odoo-python
+#: code:addons/web_select_top_menu/models/ir_ui_menu.py:0
+#, python-format
+msgid ""
+"The synchronized mode is set when the menu is added and cannot be changed."
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_res_users__top_menu_id
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_form_view
+msgid "Top Menu"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_ir_ui_menu__is_top_menu
+msgid "Top Menu Container"
+msgstr ""
+
+#. module: web_select_top_menu
+#. odoo-python
+#: code:addons/web_select_top_menu/models/ir_ui_menu.py:0
+#, python-format
+msgid "Top Menu Item"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.actions.act_window,name:web_select_top_menu.action_top_menus
+#: model:ir.ui.menu,name:web_select_top_menu.menu_top_menus
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_list_view
+msgid "Top Menus"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model,name:web_select_top_menu.model_res_users
+msgid "User"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model:ir.model.fields,field_description:web_select_top_menu.field_ir_ui_menu__top_menu_user_ids
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_form_view
+msgid "Users"
+msgstr ""
+
+#. module: web_select_top_menu
+#: model_terms:ir.ui.view,arch_db:web_select_top_menu.top_menu_form_view
+msgid "e.g. Customer Portal"
+msgstr ""
