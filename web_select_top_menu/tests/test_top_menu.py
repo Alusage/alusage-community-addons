@@ -107,6 +107,9 @@ class TestTopMenu(TransactionCase):
         self.user.top_menu_id = self.container
         roots = self.env["ir.ui.menu"].with_user(self.user).get_user_roots()
         self.assertEqual(roots.mapped("name"), ["Source Menu"])
+        menus = self.env["ir.ui.menu"].with_user(self.user).load_menus(False)
+        self.assertEqual(menus["root"]["children"], roots.ids)
+        self.assertNotIn(self.container.id, menus)
 
     def test_unlink_container_removes_sub_menus(self):
         copy = self.source._top_menu_copy_tree(self.container, "sync")

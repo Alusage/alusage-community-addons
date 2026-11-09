@@ -41,9 +41,31 @@ class IrUiMenu(models.Model):
         :return: the root menu ids
         :rtype: list(int)
         """
-        if self.env.user.top_menu_id:
-            return self.search([("parent_id", "=", self.env.user.top_menu_id.id)])
-        return self.search([("parent_id", "=", False)])
+        parent_id = self.env.user.top_menu_id.id or False
+        return self.search([("parent_id", "=", parent_id)])._filter_visible_menus()
+
+    @api.model
+    def load_menus(self, debug):
+        # Odoo 20 builds the applications from the menus without parent: the children
+        # of the top menu are re-rooted here, as get_user_roots() does before 20.
+        menus = super().load_menus(debug)
+        if not self.env.user.top_menu_id:
+            return menus
+        root_ids = self.get_user_roots().ids
+        visible = {}
+
+        def visit(menu_id, app_id):
+            menu = menus.get(menu_id)
+            if not menu or menu_id in visible:
+                return
+            visible[menu_id] = dict(menu, app_id=app_id)
+            for child_id in menu["children"]:
+                visit(child_id, app_id)
+
+        for root_id in root_ids:
+            visit(root_id, root_id)
+        visible["root"] = {"id": False, "name": "root", "children": root_ids}
+        return visible
 
     def write(self, values):
         if "top_menu_sync" in values and not self.env.context.get("top_menu_no_sync"):
