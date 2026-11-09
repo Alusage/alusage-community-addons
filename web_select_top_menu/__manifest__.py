@@ -7,16 +7,19 @@
     "summary": """
         Select top menus per user to create simple backend entry
         By default top menus are menu that have no parent_id""",
-    "version": "16.0.1.0.2",
+    "version": "16.0.2.0.0",
     "license": "AGPL-3",
-    "author": "Nicolas JEUDY",
+    "author": "Nicolas JEUDY, ArPol",
     "website": "https://github.com/Alusage/odoo-web-addons",
     "depends": [
         "web",
         "base",
     ],
     "data": [
+        "security/ir.model.access.csv",
         "views/res_users.xml",
+        "views/ir_ui_menu_views.xml",
+        "views/top_menu_add_wizard_views.xml",
     ],
     "demo": [],
     "installable": True,
